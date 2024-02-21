@@ -1,0 +1,9 @@
+<h1>My blog</h1>
+
+
+{% for blog in blogs %}
+    <h2>{{ blog.title }}</h2>
+    <h4>{{ blog.created_on }}</h4>
+    <p>{{ blog.message }}</p>
+    <br><br>
+{% endfor %}
