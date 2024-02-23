@@ -6,3 +6,6 @@ class Blog(models.Model):
     title = models.CharField(max_length=50)
     created_on = models.DateTimeField(default=timezone.now)
     message = models.TextField()
+
+    def __str__(self):
+        return self.title

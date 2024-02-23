@@ -3,7 +3,7 @@ from .models import Blog
 
 
 def all_blogs(request):
-    blogs = Blog.objects.order_by("-created_on")[:3]
+    blogs = Blog.objects.order_by("-created_on")
     return render(request, "blog/all_blogs.html", {"blogs": blogs})
 
 
