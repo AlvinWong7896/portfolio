@@ -1,3 +1,10 @@
+{% extends 'portfolio/base.html' %}
+
+
+{% block content %}
+
 <h1>{{ blog.title }}</h1>
 <h4>--{{ blog.created_on|date:'F jS Y' }}--</h4>
 <p>{{ blog.message|safe }}</p>
+
+{% endblock content %}
